@@ -1,7 +1,5 @@
-# Data100
-
 # **Kevin Wu's DATA 100 Files**
 
-# Projects
+## Projects
  - [Test Link](https://www.markdownguide.org/basic-syntax/) 
  
