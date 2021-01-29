@@ -1,5 +1,3 @@
-# **Kevin Wu's DATA 100 Files**
+# **Kevin Wu's DATA 100 Repo**
 
-## Projects
- - [Test Link](https://www.markdownguide.org/basic-syntax/) 
  
