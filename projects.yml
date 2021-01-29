@@ -1,4 +1,5 @@
 - name: Getting started with R
   descr: "yees."
+  demo: https://github.com/kevinypw/Data100
   tags:
     - tag: R
