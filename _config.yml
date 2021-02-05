@@ -9,6 +9,9 @@ about_me_description: Hey, I am a student at William and Mary, and I am taking D
 show_timeline_card: false
 show_projects: true
 show_projects_card: true
-projects_title: Informal Responses
+show_informals: true
+show_informals_card: true
+projects_title: Projects
+informals_title: Informal Responses
 show_contact_card: false
 title: Kevin Wu's Data100 Site
