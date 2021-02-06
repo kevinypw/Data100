@@ -1,3 +1,3 @@
 # Resulting Image of Challenge 1: My Dog in the Morning
 
-![Challenge_1](challenge_1_plot.jpg)
+<img src="challenge_1_plot.jpg" alt="Challenge 1" width="100" height="1000">
