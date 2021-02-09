@@ -1,5 +1,8 @@
 - name: Temporary
+  id: temp
   descr: "Save Me :)"
-  demo: https://kevinypw.github.io/Data100/projects?t=p&i=1
+  demo: https://kevinypw.github.io/Data100/projects/Temporary
   tags:
     - tag: R
+  img: https://github.com/kevinypw/Data100/blob/main/Day%201/challenge_1_plot.jpg
+  detailed_desc: I plotted my Dog in the Morning using basic R skills!
