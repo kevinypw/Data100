@@ -14,17 +14,3 @@ projects_title: Projects
 informals_title: Informal Responses
 show_contact_card: false
 title: Kevin Wu's Data100 Site
-
-page_gen-dirs: false
-page_gen:
-    - data: 'projects'
-      template: 'project_template'    
-      name: 'id'
-      dir: 'pages'
-    - data: 'informals'
-      template: 'project_template'
-      name: 'id'
-      dir: 'pages'
-
-plugins:
-  - jekyll-datapage-generator
