@@ -35,7 +35,7 @@
       <h1 class="title"><span>{{page.title}}</span></h1>
     <p>{{page.detailed_desc}}</p>
     {% if page.img %}
-      <img src="{{ page.img | prepend: site.baseurl }}"
+      <img src="{{ page.img | prepend: site.baseurl }}" style="max-width: 100%; max-height: 100%;">
     {% endif %}
     {% if page.tags %}
       <div class="tag-wrapper">
