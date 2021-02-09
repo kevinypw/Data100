@@ -1,1 +1,5 @@
-- name: Idk yet :/
+- name: Temporary
+  descr: "Wiggly Elbows :)"
+  demo: https://kevinypw.github.io/Data100/projects?t="p"&i=1
+  tags:
+    - tag: R

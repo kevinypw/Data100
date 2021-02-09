@@ -1,10 +1,13 @@
 {
-  "name": "Neumorphism",
+  "name": "copyofneumorphism",
   "version": "1.0.0",
-  "description": "",
+  "description": "copy of neumorphism",
   "scripts": {
     "dev": "gulp",
-    "prod": "gulp build"
+    "prod": "gulp build",
+    "clean": "rm -rf ./_site",
+    "build": "npm run clean && eleventy",
+    "start": "eleventy --serve --watch"
   },
   "author": "Long Do",
   "license": "MIT",
@@ -20,5 +23,17 @@
     "js-yaml": "^3.14.0",
     "lodash": "^4.17.20",
     "node-sass": "^4.13.1"
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinypw/Data100.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinypw/Data100/issues"
+  },
+  "homepage": "https://github.com/kevinypw/Data100#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
   }
 }
