@@ -18,10 +18,13 @@ title: Kevin Wu's Data100 Site
 page_gen-dirs: false
 page_gen:
     - data: 'projects'
-      template: 'project_template.html'    
+      template: 'project_template'    
       name: 'id'
-      dir: 'projects'
+      dir: 'pages'
     - data: 'informals'
-      template: 'project_template.html'
+      template: 'project_template'
       name: 'id'
-      dir: 'projects'
+      dir: 'pages'
+
+plugins:
+  - jekyll-datapage-generator
