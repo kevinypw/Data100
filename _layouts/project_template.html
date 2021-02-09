@@ -35,19 +35,17 @@
       <h1 class="title"><span>{{page._name}}</span></h1>
     <a>{{site.baseurl}}</a>>
     <div class="projects-wrapper">
-        <div class="project neumorphism-card" data-aos="zoom-in-down">
-          <p class="project-desc">{{page.detailed_desc}}</p>
-          {% if page.img %}
-            <img src="{{page.img}}"
-          {% endif %}
-          {% if page.tags %}
-            <div class="tag-wrapper">
-              {% for tag in page.tags %}
-                <span class="tag neumorphism-card">{{tag.tag}}</span>
-              {% endfor %}
-            </div>
-          {% endif %}
+      <p class="project-desc">{{page.detailed_desc}}</p>
+      {% if page.img %}
+        <img src="{{page.img}}"
+      {% endif %}
+      {% if page.tags %}
+        <div class="tag-wrapper">
+          {% for tag in page.tags %}
+            <span class="tag neumorphism-card">{{tag.tag}}</span>
+          {% endfor %}
         </div>
+      {% endif %}
     </div>
     </section>
   {% include footer.html %}
