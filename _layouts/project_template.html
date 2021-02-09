@@ -34,9 +34,7 @@
   </div>
   <section class="card neumorphism-card-big">
     <h1 class="title"><span>{{page._name}}</span></h1>
-    {% for thing in site %}
-      <a>{{thing}}</a>
-    {% endfor %}
+    <a>{{site.baseurl}}</a>>
     <div class="projects-wrapper">
         <div class="project neumorphism-card" data-aos="zoom-in-down">
           <p class="project-desc">{{page.detailed_desc}}</p>
