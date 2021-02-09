@@ -32,21 +32,18 @@
   </div>
   <div class="layout">
     <section class="card neumorphism-card-big">
-      <h1 class="title"><span>{{page._name}}</span></h1>
-    <a>{{site.baseurl}}</a>>
-    <div class="projects-wrapper">
-      <p class="project-desc">{{page.detailed_desc}}</p>
-      {% if page.img %}
-        <img src="{{page.img}}"
-      {% endif %}
-      {% if page.tags %}
-        <div class="tag-wrapper">
-          {% for tag in page.tags %}
-            <span class="tag neumorphism-card">{{tag.tag}}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
+      <h1 class="title"><span>{{page.title}}</span></h1>
+    <p>{{page.detailed_desc}}</p>
+    {% if page.img %}
+      <img src="{{ page.img | prepend: site.baseurl }}"
+    {% endif %}
+    {% if page.tags %}
+      <div class="tag-wrapper">
+        {% for tag in page.tags %}
+          <span class="tag neumorphism-card">{{tag.tag}}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
     </section>
   {% include footer.html %}
 </body>
