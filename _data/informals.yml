@@ -1,5 +1,5 @@
 - name: Challenge 1
   descr: "A plot of my dog in the morning."
-  demo: https://kevinypw.github.io/Data100/projects?t="i"&i=1
+  demo: https://kevinypw.github.io/Data100/projects?t=i&i=1
   tags:
     - tag: R
