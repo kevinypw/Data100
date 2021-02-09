@@ -15,7 +15,7 @@ informals_title: Informal Responses
 show_contact_card: false
 title: Kevin Wu's Data100 Site
 
-page_gen-dirs: true
+page_gen-dirs: false
 page_gen:
     - data: 'projects'
       template: 'project_template.html'    
