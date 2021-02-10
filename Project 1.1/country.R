@@ -25,12 +25,14 @@ ggplot() +
   geom_sf(data = lbr_int, size = .75, color = "#000000", fill = "#ceabff", alpha = 0.5) +
   geom_sf_text(data = lbr_adm2,
                aes(label = NAME_2),
-               size = 3,
-               color = "#6a00ff") +
+               size = 1.8,
+               color = "#6a00ff",
+               alpha = 0.75) +
   geom_sf_text(data = lbr_adm1,
                aes(label = NAME_1),
-               size = 5,
-               color = "#6a00ff")
-
+               size = 4,
+               color = "#6a00ff",
+               alpha = .75)
 
 ggsave("gabon.png")
+
