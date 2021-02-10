@@ -1,5 +1,5 @@
 - name: Project 1: LIBM Country Map
-  descr: "I plotted a map of Gabon."
+  descr: I plotted a map of Gabon.
   demo: https://kevinypw.github.io/Data100/projects/1/
   tags:
     - tag: R
