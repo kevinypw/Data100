@@ -1,8 +1,10 @@
-- name: Challenge 1
+- ch_1
+  name: Challenge 1
   descr: "A plot of my dog in the morning."
   demo: https://kevinypw.github.io/Data100/informal/1
   tags:
     - tag: R
-- name: Informal Response 1
+- inf_r_1
+  name: Informal Response 1
   descr: "A response to Blumenstock's article."
   demo: https://kevinypw.github.io/Data100/informal/2
