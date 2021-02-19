@@ -50,9 +50,7 @@
           <img src="{{ sec.content | prepend: site.baseurl }}" style="max-width: 100%; max-height: 100%;">
         {% elsif sec.type == "txt"%}
         <p style="line-height: 2;">
-          <pre>
-             {{sec.content}}
-          </pre>
+          {{sec.content}}
         </p>
         {% endif %}
       {% endfor %}
