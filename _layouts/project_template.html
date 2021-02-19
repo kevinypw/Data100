@@ -52,6 +52,10 @@
         <p style="line-height: 2;">
           {{sec.content}}
         </p>
+        {% elsif sec.type == "brk" %}
+        <<p style="line-height: 4;">
+          ___
+        </p>>
         {% endif %}
       {% endfor %}
     {% endif %}
