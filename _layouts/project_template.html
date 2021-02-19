@@ -44,6 +44,9 @@
         {% endfor %}
       </div>
     {% endif %}
+    {% if page.response_loc %}
+        {% include {{page.response_loc}}%}
+    {% endif %}
     </section>
   {% include footer.html %}
 </body>
