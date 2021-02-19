@@ -45,7 +45,7 @@
       </div>
     {% endif %}
     {% if page.response_loc %}
-        {% include {{page.response_loc}}%}
+        {% include_relative {{page.response_loc}}%}
     {% endif %}
     </section>
   {% include footer.html %}
