@@ -36,12 +36,12 @@ big_plot <- ggplot() +
           fill = "#ceabff",
           alpha = 0.5) +
   geom_sf(data = lbr_int, size = .75, color = "#000000", fill = "#ceabff", alpha = 0.5) +
-  geom_sf_text(data = label_A_location, aes(label = "Detail A"),
+  geom_sf_text(data = label_A_location, aes(label = "Detail B"),
                nudge_x=label_A_location$my_nudge_x,
                nudge_y=label_A_location$my_nudge_y,
                size = 5,
-               color = "green") +
-  geom_sf_text(data = label_B_location, aes(label = "Detail B"),
+               color = "red") +
+  geom_sf_text(data = label_B_location, aes(label = "Detail A"),
                nudge_x = label_B_location$my_nudge_x,
                nudge_y = label_B_location$my_nudge_y,
                size = 5,
@@ -61,8 +61,8 @@ big_plot <- ggplot() +
                size = 8,
                color = "6a00ff",
                alpha = 0.2) +
-  geom_rect(data = lbr_adm1, xmin = 8.75, xmax = 12.1, ymin = -4, ymax = 1.1,
-            fill = NA, colour = "green", size = 0.6, alpha = .5) +
+  geom_rect(data = lbr_adm1, xmin = 8.75, xmax = 11.4, ymin = -3, ymax = 1.1,
+            fill = NA, colour = "red", size = 0.6, alpha = .5) +
   geom_rect(data = lbr_adm1, xmin = 12.75, xmax = 14.5, ymin = -2.5, ymax = 0.1,
             fill = NA, colour = "blue", size = 0.6, alpha = .5) +
   ggtitle("Gabon", subtitle = "Details A & B") +
