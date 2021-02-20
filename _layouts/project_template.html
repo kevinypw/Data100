@@ -33,7 +33,9 @@
   <div class="layout">
     <section class="card neumorphism-card-big">
       <h1 class="title"><span>{{page.title}}</span></h1>
-    <p style = "line-height: 2;">{{page.detailed_desc}}</p>
+    {% if page.detailed_desc %}
+      <p style = "line-height: 2;">{{page.detailed_desc}}</p>
+    {% endif %}
     {% if page.tags %}
       <div class="tag-wrapper">
         {% for tag in page.tags %}
