@@ -60,7 +60,7 @@
           </p>
         {% elsif sec.type == "mov" %}
           <video controls autoplay>
-            <source src="gtm_mov.mp4" type="video/mp4">
+            <source src="{{ sec.content | prepend: site.baseurl }}" type="video/mp4" style="max-width: 100%; max-height: 100%;">
             Your browser does not support the video tag.
           </video>
         {% endif %}
