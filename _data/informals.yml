@@ -1,4 +1,4 @@
-- name: Challenge 1
+- name: Day One Challenge
   descr: "A plot of my dog in the morning."
   demo: https://kevinypw.github.io/Data100/informal/1
   tags:
@@ -7,3 +7,5 @@
 - name: Informal Response 1
   descr: "A response to Blumenstock's article."
   demo: https://kevinypw.github.io/Data100/informal/2
+  tags:
+    - tag: Reflection
