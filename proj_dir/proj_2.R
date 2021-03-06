@@ -32,18 +32,27 @@ totals_adm2 <- pop_values_adm2 %>%
 lbr_adm2 <- lbr_adm2 %>%
   add_column(pop21 = totals_adm2$pop21)
 
-gg3d <- ggplot(lbr_adm2) + 
-  geom_sf(aes(fill = log(pop21)),
-          size = .25) +
-  scale_fill_gradient2(low = "white", mid = "yellow", high = "purple", midpoint = 10)
+totals_adm1 <- pop_values_adm1 %>%
+  group_by(ID) %>%
+  summarize(population = sum(gtm_pd_2020_1km, na.rm = TRUE))
 
-plot_gg(gg3d, multicore = TRUE, width = 6, height = 2.7, fov = 69)
+lbr_adm1 <- lbr_adm1 %>%
+  add_column(population = totals_adm1$population)
 
-render_movie(type = "orbit", 
-             frames = 720, 
-             fps = 30,
-             filename = "gtm_mov",
-             zoom = 0.5)
+save(lbr_adm1, file="GTM_adm1_pop.RData")
+
+# gg3d <- ggplot(lbr_adm2) + 
+#   geom_sf(aes(fill = log(pop21)),
+#           size = .25) +
+#   scale_fill_gradient2(low = "white", mid = "yellow", high = "purple", midpoint = 10)
+
+# plot_gg(gg3d, multicore = TRUE, width = 6, height = 2.7, fov = 69)
+
+# render_movie(type = "orbit", 
+#              frames = 720, 
+#              fps = 30,
+#              filename = "gtm_mov",
+#              zoom = 0.5)
 # ggplot(lbr_adm2) +
 #   geom_sf(aes(fill = log(pop21)),
 #           size = .25) +
