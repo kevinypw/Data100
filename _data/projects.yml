@@ -9,7 +9,7 @@
   tags:
     - tag: R
 - name: "Project 2.2: Creating a Geometric Bar Plot with an Simple Feature object"
-  descr: "I plotted population data data for Guatemala."
+  descr: "I plotted population density data for Guatemala."
   demo: https://kevinypw.github.io/Data100/projects/2_2/
   tags:
     - tag: R
