@@ -3,8 +3,13 @@
   demo: https://kevinypw.github.io/Data100/projects/1/
   tags:
     - tag: R
-- name: "Project 2: Extracting Populations from a Raster and Aggregating to each Unit"
+- name: "Project 2.1: Extracting Populations from a Raster and Aggregating to each Unit"
   descr: "I plotted population data for Guatemala."
   demo: https://kevinypw.github.io/Data100/projects/2/
+  tags:
+    - tag: R
+- name: "Project 2.2: Creating a Geometric Bar Plot with an Simple Feature object"
+  descr: "I plotted population data data for Guatemala."
+  demo: https://kevinypw.github.io/Data100/projects/2_2/
   tags:
     - tag: R
