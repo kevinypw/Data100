@@ -40,6 +40,7 @@ lbr_adm1 <- lbr_adm1 %>%
   add_column(population = totals_adm1$population)
 
 save(lbr_adm1, file="GTM_adm1_pop.RData")
+save(lbr_adm2, file="GTM_adm2_pop.RData")
 
 # gg3d <- ggplot(lbr_adm2) + 
 #   geom_sf(aes(fill = log(pop21)),
