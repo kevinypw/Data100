@@ -30,8 +30,8 @@ night <- raster("gtm_viirs_100m_2015.tif")
 lulc_stack <- addLayer(lulc_stack, topography, slope, night)
 names(lulc_stack)[c(1,10:12)] <- c("water","topo","slope", "night")
 
-plot(lulc_stack[[10]])
-plot(st_geometry(lbr_adm1), add = TRUE)
+# plot(lulc_stack[[10]])
+# plot(st_geometry(lbr_adm1), add = TRUE)
 
 # ncores <- detectCores() - 1
 # beginCluster(ncores)
@@ -47,7 +47,36 @@ lulc_ttls_adm2 <- lulc_vals_adm2 %>%
 
 lbr_adm2 <- bind_cols(lbr_adm2, lulc_ttls_adm2)
 
-ggplot(lbr_adm2, aes(log(night))) +
-  geom_histogram(aes(y = ..density..), color = "black", fill = "white") + 
-  geom_density(alpha = 0.2, fill = "#FF6666") + 
-  theme_minimal()
+# ggplot(lbr_adm2, aes(log(water))) +
+#   geom_histogram(aes(y = ..density..), color = "black", fill = "white") + 
+#   geom_density(alpha = 0.2, fill = "#FF6666") + 
+#   theme_minimal()
+# 
+# setwd("D:/programming/Data100/proj_dir/images/")
+# ggsave("gtm_density_v_water.png",
+#        dpi = 200,
+#        width = 10,
+#        height = 10)
+
+# night vs pop21
+# ggplot(lbr_adm2, aes(pop21, night)) + 
+#   geom_point(size = .1, color = "red") +
+#   geom_smooth()
+# 
+# fit <- lm(pop21 ~ night, data=lbr_adm2)
+# summary(fit)
+
+# pop21 vs a lot of things
+# ggplot(lm(pop21 ~ night + dst190 + dst200, data=lbr_adm2)) + 
+#   geom_point(aes(x=.fitted, y=.resid), size = .1) +
+#   geom_smooth(aes(x=.fitted, y=.resid))
+# 
+# fit <- lm(pop21 ~ night + dst190 + dst200, data=lbr_adm2)
+# summary(fit)
+
+ggplot(lm(pop21 ~ water + dst011 + dst040 + dst130 + dst140 + dst150 + dst160 + dst190 + dst200 + topo + slope + night, data=lbr_adm2)) + 
+  geom_point(aes(x=.fitted, y=.resid), size = .1) +
+  geom_smooth(aes(x=.fitted, y=.resid))
+
+fit <- lm(pop21 ~ water + dst011 + dst040 + dst130 + dst140 + dst150 + dst160 + dst190 + dst200 + topo + slope + night, data=lbr_adm2)
+summary(fit)
