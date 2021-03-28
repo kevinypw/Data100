@@ -65,7 +65,7 @@
           </video>
         {% elsif sec.type == "code" %}
           <code>
-            {% include sec.content | prepend: site.baseurl %}
+            {% include sec.content %}
           </code>
         {% endif %}
       {% endfor %}
