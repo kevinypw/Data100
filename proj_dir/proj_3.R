@@ -67,16 +67,29 @@ lbr_adm2 <- bind_cols(lbr_adm2, lulc_ttls_adm2)
 # summary(fit)
 
 # pop21 vs a lot of things
-# ggplot(lm(pop21 ~ night + dst190 + dst200, data=lbr_adm2)) + 
+# ggplot(lm(pop21 ~ night + dst190 + dst200, data=lbr_adm2)) +
 #   geom_point(aes(x=.fitted, y=.resid), size = .1) +
 #   geom_smooth(aes(x=.fitted, y=.resid))
 # 
 # fit <- lm(pop21 ~ night + dst190 + dst200, data=lbr_adm2)
 # summary(fit)
 
-ggplot(lm(pop21 ~ water + dst011 + dst040 + dst130 + dst140 + dst150 + dst160 + dst190 + dst200 + topo + slope + night, data=lbr_adm2)) + 
+setwd("D:/programming/Data100/proj_dir/images/")
+# pop21 vs everything
+ggplot(lm(pop21 ~ water + dst011 + dst040 + dst130 + dst140 + dst150 + dst160 + dst190 + dst200 + topo + slope + night, data=lbr_adm2)) +
   geom_point(aes(x=.fitted, y=.resid), size = .1) +
   geom_smooth(aes(x=.fitted, y=.resid))
 
 fit <- lm(pop21 ~ water + dst011 + dst040 + dst130 + dst140 + dst150 + dst160 + dst190 + dst200 + topo + slope + night, data=lbr_adm2)
+summary(fit)
+ggsave("gtm_lulc_everything.png",
+       dpi = 200,
+       width = 10,
+       height = 10)
+
+# testing
+fit <- lm(pop21 ~ night, data=lbr_adm2)
+ggplot(fit) +
+  geom_point(aes(x=.fitted, y=.resid), size = .1) +
+  geom_smooth(aes(x=.fitted, y=.resid))
 summary(fit)
