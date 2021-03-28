@@ -139,6 +139,11 @@ a {
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 
+code {
+  display: block;
+  white-space: pre-wrap   
+}
+
 /* Preloader */
 
 #preloader {
