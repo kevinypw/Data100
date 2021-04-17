@@ -1,2 +1,8 @@
 lulc/
+<<<<<<< HEAD
 lulc*
+data/
+.RData
+=======
+lulc*
+>>>>>>> parent of 54ced35 (finished proj 4)
