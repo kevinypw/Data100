@@ -18,3 +18,8 @@
   demo: https://kevinypw.github.io/Data100/projects/3/
   tags:
     - tag: R
+- name: ""
+  descr: "Using Land Use and Land Cover variables, I predicted Guatemala's Population using different methods of analysis."
+  demo: https://kevinypw.github.io/Data100/projects/4/
+  tags:
+    - tag: R
