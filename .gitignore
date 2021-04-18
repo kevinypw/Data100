@@ -8,3 +8,4 @@ node_modules
 .jekyll-metadata
 lulc*
 lulc\
+proj_dir/images/.Rhistory
