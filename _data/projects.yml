@@ -19,7 +19,7 @@
   tags:
     - tag: R
 - name: "Project 4: Modeling and Predicting Spatial Values"
-  descr: "Using Land Use and Land Cover variables, I predicted Guatemala's Population using different methods of analysis."
+  descr: "Using land use and land cover variables, I predicted Guatemala's Population using different methods of analysis."
   demo: https://kevinypw.github.io/Data100/projects/4/
   tags:
     - tag: R
