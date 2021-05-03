@@ -23,3 +23,8 @@
   demo: https://kevinypw.github.io/Data100/projects/4/
   tags:
     - tag: R
+- name: "Project 5: De Facto Description of Human Settlements and Urban Areas"
+  descr: "I produced a geospatial plot that describes de facto boundaries and human settlements and urbanization throughout a subset of Guatemala."
+  demo: https://kevinypw.github.io/Data100/projects/4/
+  tags:
+    - tag: R
