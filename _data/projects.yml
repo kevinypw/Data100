@@ -28,3 +28,8 @@
   demo: https://kevinypw.github.io/Data100/projects/5/
   tags:
     - tag: R
+- name: "Final Project: Accessiblity 3"
+  descr: "I produced a 3D geospatial plot that describes de facto boundaries and human settlements and urbanization throughout a subset of Guatemala."
+  demo: https://kevinypw.github.io/Data100/projects/6/
+  tags:
+    - tag: R
